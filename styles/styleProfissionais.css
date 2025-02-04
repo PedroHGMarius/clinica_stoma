@@ -1,0 +1,11 @@
+.container__profissionais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 5rem;
+    height: 100vh;
+    box-shadow: rgb(38, 57, 77) 0px -20px 30px -10px inset;
+}
+
