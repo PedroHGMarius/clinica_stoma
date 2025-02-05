@@ -34,25 +34,19 @@
 }
 
 .container__section__exames {
-    display: grid;
-    grid-template-rows: repeat(13, 1fr);
-    grid-template-columns: repeat(13, 1fr);
-    height: 115vh;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background-color: var(--first-color-formal);  
-    font-family: var(--body-font);
-    color: var(--sixth-color);
+  display: grid;
+  grid-template-rows: repeat(13, 1fr);
+  grid-template-columns: repeat(13, 1fr);
+  height: 130vh;
+  background-color: var(--color-exam__list__item);  
+  font-family: var(--body-font);
+  color: var(--sixth-color);
 }
 
 .titulos_exames {
-    grid-row: 1;
-    grid-column: 1 / span 13;
-    padding: 10px;
-    border-top: 3px solid var(--sixth-color);
-    border-bottom: 3px solid var(--sixth-color);
-    background-color: var(--second-color-formal);
-    font: bold 3rem var(--first-font);
-    text-align: center;
+  border-bottom: 2px solid var(--first-color-formal);
+  font: bold 3rem var(--first-font);
+  text-align: center;
 }
 
 /*=============== CARD ===============*/

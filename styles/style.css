@@ -105,17 +105,15 @@
     flex-flow: row nowrap;
     height: 60vh;
     background-color: var(--first-color-formal);  
-    box-shadow: rgb(38, 57, 77) 0px -20px 30px -10px inset;
     text-align: center;
     color: var(--sixth-color);
 }
 
 .titulo__contatos__endereco {
     padding: 2px;
-    border-top: 3px solid var(--sixth-color);
-    border-bottom: 3px solid var(--sixth-color);
+    border-bottom: 2px solid var(--sixth-color);
+    margin-bottom: .5rem;
     font: bold 2rem var(--first-font);
-    color: inherit;
     text-align: center;
 }
 
