@@ -1,11 +1,11 @@
-.section__localizacao {
+.container__section__localizacao {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
     gap: 5rem;
-    height: 120vh;
-    background-color: var(--color-exam__list__item);   
+    height: 130vh;
+    background-color: var(--color-exam__list__item);
 
 }
 .container__localizacao {
@@ -14,7 +14,6 @@
     justify-content: center;
     flex-flow: row nowrap;
     gap: 5rem;
-    margin-top: -2.5rem;
 }
 
 .container__localizacao > iframe {

@@ -4,13 +4,28 @@
     justify-content: center;
     flex-flow: row nowrap;
     gap: 5rem;
-    height: 120vh;
+    height: 130vh;
     background-color: var(--color-exam__list__item);  
+}
+
+.container__texto {
+
 }
 
 .titulo__profissional {
     border-bottom: 2px solid var(--first-color-formal);
     margin-bottom: .5rem;
-    font: bold 2rem var(--first-font);
+    font: bold 3rem var(--first-font);
     text-align: end;
+}
+
+.texto_profissional {
+    font: normal 1rem var(--first-font);
+    text-align: end;
+}
+
+@media screen and (max-width: 1105px){
+    img {
+        display: none;
+    }
 }

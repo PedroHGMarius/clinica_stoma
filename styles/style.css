@@ -26,6 +26,7 @@
     --first-font: 'Merriweather', 'Playfair Display', serif;
     --second-font: 'Times New Roman', Times, serif;
     --third-font: 'Montserrat', 'Poppins', 'Source Sans Pro', sans-serif;
+   
 }
 
 * {
@@ -43,6 +44,7 @@
     align-items: center;
     justify-content: space-between;
     height: 15vh;
+    width: 100%;
     border-bottom: 5px outset var(--sixth-color);
     color: var(--sixth-color);
     background-color: var(--second-color-formal);
@@ -52,7 +54,9 @@
 .titulo__pagina {
     margin-left: 2.75rem;
     font: bold 3rem var(--first-font);
+    text-transform: uppercase;
     color: inherit;
+    white-space: preserve nowrap;
 }
 
 .container__navegacao {
@@ -63,16 +67,21 @@
     margin-right: 2.75rem;
 }
 
+.lista__links__navegacao {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.2rem;
+    
+}
+
+
 .link__navegacao {
     font: bold 1rem var(--first-font);
     font-weight: 400;
     line-height: normal;
     color: inherit;
-}
+    white-space: preserve nowrap;
 
-.icones__menu {
-    width: 1.25rem;
-    height: 1.25rem;
 }
 
 .container__folha__rosto {
@@ -95,7 +104,7 @@
     width: 15rem;
     height: 4rem;
     background: #D9D9D9;
-    box-shadow: 2px 5px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 5px 4px 2px;
 }
 
 .container__footer {
@@ -106,12 +115,12 @@
     height: 60vh;
     background-color: var(--first-color-formal);  
     text-align: center;
-    color: var(--sixth-color);
+    color: var(--seventh-color);
 }
 
 .titulo__contatos__endereco {
     padding: 2px;
-    border-bottom: 2px solid var(--sixth-color);
+    border-bottom: 2px solid var(--seventh-color);
     margin-bottom: .5rem;
     font: bold 2rem var(--first-font);
     text-align: center;
@@ -121,4 +130,46 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 1.25rem;
+}
+
+@media screen and (max-width: 1060px) {
+    @keyframes titulo-tablet {
+        from {
+            font-size: 3rem;
+        }
+        to {
+            font-size: 2.2rem;
+        }
+    }
+
+    .titulo__pagina {
+        margin-left: 1.75rem;
+        font: bold 2.2rem var(--first-font);
+        animation-name: titulo-tablet;
+        animation-duration: .5s;
+    }
+    
+}
+@media screen and (max-width: 440px) {
+    @keyframes links-navegacao {
+        from {
+            font-size: 1rem;
+        }
+        to {
+            font-size: .75rem;
+        }
+    }
+
+    .titulo__pagina {
+        margin-left: .75rem;
+        font: bold 1.6rem var(--first-font);
+        color: inherit;
+        white-space: preserve nowrap;
+    }
+    .link__navegacao {
+        animation-name: links-navegacao;
+        animation-duration: .5s;
+        font: normal .75rem var(--first-font);
+    }
+    
 }
