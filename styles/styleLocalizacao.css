@@ -8,6 +8,7 @@
     background-color: var(--color-exam__list__item);
 
 }
+
 .container__localizacao {
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@
     gap: 5rem;
 }
 
-.container__localizacao > iframe {
+.container__localizacao>iframe {
     border-radius: 2rem;
 }
 

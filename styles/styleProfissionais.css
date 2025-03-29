@@ -5,12 +5,10 @@
     flex-flow: row nowrap;
     gap: 5rem;
     height: 130vh;
-    background-color: var(--color-exam__list__item);  
+    background-color: var(--color-exam__list__item);
 }
 
-.container__texto {
-
-}
+.container__texto {}
 
 .titulo__profissional {
     border-bottom: 2px solid var(--first-color-formal);
@@ -24,7 +22,7 @@
     text-align: end;
 }
 
-@media screen and (max-width: 1105px){
+@media screen and (max-width: 1105px) {
     img {
         display: none;
     }

@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+@import url(/styles/styleProfissionais.css);
+@import url(/styles/styleExames.css);
+@import url(/styles/styleLocalizacao.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+:root {
+    /* Cores */
+    --cor-primaria-dark: #c13724;
+    --cor-primaria-light: #ee6451;
+    --cor-secundaria-light: #fff5eb;
+    --cor-secundaria-dark: #f5e6d6;
+    --cor-terciaria-medio: #cbda74;
+    --cor-terciaria-dark: #a2b72b;
+    --cor-terciaria-light: #eff2e1;
+    --cor-neutra-dark: #444444;
+    --cor-neutra-medio: #b9b9b9;
+    --cor-neutra-light: #ffffff;
+
+    --first-color: #3d99ab;
+    --second-color: #4b618d;
+    --third-color: #8C3A7E;
+    --fourth-color: #6f3474;
+    --fifth-color: #6c3c64;
+    --sixth-color: #000000;
+    --seventh-color: #FFFFFF;
+
+    --first-color-formal: #3D99AB;
+    --second-color-formal: #D9D9D9;
+    --color-exam__list__item: #D9D9D980;
+
+    --cor-primaria-box-shadow: rgba(193, 55, 36, 0.4);
+    --cor-secundaria-box-shadow: rgba(162, 183, 36, 0.4);
+
+    /* Tipografia */
+    --font-sigmar: "Sigmar", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --first-font: 'Merriweather', 'Playfair Display', serif;
+    --second-font: 'Times New Roman', 'Times', serif;
+    --third-font: 'Montserrat', 'Poppins', 'Source Sans Pro', sans-serif;
+
+    /* Tamanhos de fonte */
+    --font-size-xxxl: 4.5rem;
+    --font-size-xxl: 2.625rem;
+    --fonte-size-xl: 2.438rem;
+    --fonte-size-l: 1.938rem;
+    --fonte-size-xm: 1.563rem;
+    --fonte-size-m: 1.25rem;
+    --fonte-size-b: 1rem;
+    --fonte-size-s: 0.813rem;
+
+    /* Altura da linhas */
+    --line-height: 120%;
+
+    /* Espaçamentos */
+    --padding-xs: 0.25rem;
+    --padding-s: 0.5rem;
+    --padding-m: 1rem;
+    --padding-l: 1.5rem;
+    --padding-xl: 2rem;
+    --padding-xxl: 2.5rem;
+    --padding-3xl: 3.75rem;
+    --padding-4xl: 4rem;
+    --padding-5xl: 4.75rem;
+
+    --gap-xs: 0.25rem;
+    --gap-s: 0.5rem;
+    --gap-m: 1rem;
+    --gap-l: 1.5rem;
+    --gap-xl: 2rem;
+    --gap-xxl: 2.5rem;
+    --gap-xxxl: 6rem;
+
+    --bg-gradiente-fundo: linear-gradient(210deg, var(--first-color-formal) 35%, var(--second-color) 60%, var(--third-color) 80%, var(--fourth-color) 95%, var(--fifth-color));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    border-bottom: 5px outset var(--sixth-color);
+    color: var(--sixth-color);
+    background-color: var(--second-color-formal);
+
+}
+
+.titulo__pagina {
+    margin-left: 2.75rem;
+    font: bold 3rem var(--first-font);
+    text-transform: uppercase;
+    color: inherit;
+    white-space: preserve nowrap;
+}
+
+.container__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-right: 2.75rem;
+}
+
+.lista__links__navegacao {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.2rem;
+
+}
+
+
+.link__navegacao {
+    font: bold 1rem var(--first-font);
+    font-weight: 400;
+    line-height: normal;
+    color: inherit;
+    white-space: preserve nowrap;
+
+}
+
+.container__folha__rosto {
+    display: flex;
+    justify-content: space-around;
+    height: 85vh;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: var(--first-color-formal) url(/assets/LogoClinicaStoma.svg) no-repeat 0% 100%/26rem 26rem border-box;
+}
+
+.botao__agendar__consulta {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    padding: 1.25rem;
+    color: var(--sixth-color);
+    font: bold 1rem var(--first-font);
+    text-align: center;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 4rem;
+    background: #D9D9D9;
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 5px 4px 2px;
+}
+
+.container__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    height: 60vh;
+    background-color: var(--first-color-formal);
+    text-align: center;
+    color: var(--seventh-color);
+}
+
+.titulo__contatos__endereco {
+    padding: 2px;
+    border-bottom: 2px solid var(--seventh-color);
+    margin-bottom: .5rem;
+    font: bold 2rem var(--first-font);
+    text-align: center;
+}
+
+.container__lista__contatos__endereco {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.25rem;
+}
+
+@media screen and (max-width: 1060px) {
+    @keyframes titulo-tablet {
+        from {
+            font-size: 3rem;
+        }
+
+        to {
+            font-size: 2.2rem;
+        }
+    }
+
+    .titulo__pagina {
+        margin-left: 1.75rem;
+        font: bold 2.2rem var(--first-font);
+        animation-name: titulo-tablet;
+        animation-duration: .5s;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    @keyframes links-navegacao {
+        from {
+            font-size: 1rem;
+        }
+
+        to {
+            font-size: .75rem;
+        }
+    }
+
+    .titulo__pagina {
+        margin-left: .75rem;
+        font: bold 1.6rem var(--first-font);
+        color: inherit;
+        white-space: preserve nowrap;
+    }
+
+    .link__navegacao {
+        animation-name: links-navegacao;
+        animation-duration: .5s;
+        font: normal .75rem var(--first-font);
+    }
+
+}

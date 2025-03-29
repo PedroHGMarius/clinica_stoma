@@ -20,17 +20,17 @@
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
-    :root {
-      --h2-font-size: 1rem;
-      --small-font-size: .875rem;
-    }
-  }  
+  :root {
+    --h2-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
 
 /*=============== BASE ===============*/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .container__section__exames {
@@ -38,7 +38,7 @@
   grid-template-rows: repeat(13, 1fr);
   grid-template-columns: repeat(13, 1fr);
   height: 130vh;
-  background-color: var(--color-exam__list__item);  
+  background-color: var(--color-exam__list__item);
   font-family: var(--body-font);
   color: var(--sixth-color);
 }
@@ -156,6 +156,7 @@
   50% {
     transform: translateY(-10rem);
   }
+
   100% {
     transform: translateY(-5rem);
   }
@@ -171,9 +172,11 @@
   0% {
     transform: translateY(-7rem);
   }
+
   50% {
     transform: translateY(-10rem);
   }
+
   100% {
     transform: translateY(.5rem);
   }
@@ -184,6 +187,7 @@
     overflow: initial;
     pointer-events: none;
   }
+
   50% {
     overflow: hidden;
   }
@@ -219,9 +223,11 @@
   .card__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .card__img {
     width: 348px;
   }
+
   .card__data {
     width: 316px;
     padding-inline: 2.5rem;

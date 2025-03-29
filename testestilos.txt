@@ -1,1 +1,0 @@
-    /* background-image: linear-gradient(210deg, var(--first-color-formal) 35%, var(--second-color) 60%, var(--third-color) 80%, var(--fourth-color) 95%, var(--fifth-color)); */
