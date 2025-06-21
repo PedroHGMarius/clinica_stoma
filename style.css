@@ -200,6 +200,7 @@
         font: bold 2.2rem var(--first-font);
         animation-name: titulo-tablet;
         animation-duration: .5s;
+        animation: eas;
     }
 
 }

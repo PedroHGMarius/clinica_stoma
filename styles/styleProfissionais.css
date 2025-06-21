@@ -8,7 +8,9 @@
     background-color: var(--color-exam__list__item);
 }
 
-.container__texto {}
+/* .container__texto {
+
+} */
 
 .titulo__profissional {
     border-bottom: 2px solid var(--first-color-formal);
